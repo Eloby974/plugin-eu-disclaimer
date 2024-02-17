@@ -11,7 +11,7 @@ class DisclaimerGestionTable {
         $message = new DisclaimerOptions(1, "", "");
 
         // on alimente l'objet message avec les valeurs par défaut au setter (mutateur)
-        $message->setMessageDisclaimer("Au regard de la loi européenne, vous devez nous confirmer que vous avez plus de 18 ans pour visiter ce site.");
+        $message->setMessageDisclaimer("Au regard de la loi européenne, vous devez nous confirmer que vous avez plus de 18 ans pour visiter ce site");
         $message->setRedirectionko("https://www.google.com/");
         global $wpdb;
         // création de la table
