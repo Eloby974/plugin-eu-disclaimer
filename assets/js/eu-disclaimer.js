@@ -1,6 +1,6 @@
 //Affichage du modal
 jQuery(document).ready(function($) {
-  if(lireUnCookie('eu-disclaimer-vapobar') != "ejD86j7ZXF3x") {
+  if(lireUnCookie('eu-disclaimer-vapobar') != "Vous avez confirmé que vous avez plus de 18 ans !") {
     $("#monModal").modal({
       escapeClose: false,
       clickClose: false,
@@ -48,7 +48,7 @@ document.getElementById("actionDisclaimer").addEventListener("click", accepterLe
 
 //Création d'une fonction que l'on va associer au bouton Oui de notre modal par le biais de onclick
 function accepterLeDisclaimer() {
-  creerUnCookie('eu-disclaimer-vapobar', "ejD86j7ZXF3x", 1);
+  creerUnCookie('eu-disclaimer-vapobar', "Vous avez confirmé que vous avez plus de 18 ans !", 1);
   var cookie = lireUnCookie('eu-disclaimer-vapobar');
   alert(cookie);
 }
